@@ -23,7 +23,7 @@ void main() {
 }
 
 Map<String, String> capitalizeMap(Map<String, String> person) {
-  person['name'] = person['name']?.toUpperCase() ?? 'Not name detected';
+  person['name'] = person['name']?.toUpperCase() ?? 'Not name detected'; 
   return person;
 }
 
