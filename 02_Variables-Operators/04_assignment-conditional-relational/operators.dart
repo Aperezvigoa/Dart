@@ -20,4 +20,29 @@ void main() {
   final int newNumber = empty ?? age;
   print('New Number value: $newNumber');
 
+  // Relational Operators
+  // All relational operators returns boolean values
+  // > | < | >= | <= | == | !=
+
+  final String name1 = 'Alex';
+  final String name2 = 'Charlie';
+
+  print('$name1 == $name2: ${name1 == name2}');
+  print('$name1 != $name2: ${name1 != name2}');
+
+  final int number1 = 50;
+  final int number2 = 32;
+
+  print('Is $number1 > $number2: ${number1 > number2}');
+  print('Is $number1 < $number2: ${number1 < number2}');
+  print('Is $number1 >= $number2: ${number1 >= number2}');
+  print('Is $number1 <= $number2: ${number1 <= number2}');
+
+  // Type Operator
+  final int i = 10;
+  final String j = '100';
+
+  print('is $i an int? ${i is int}');
+  print('is $j an int? ${j is int}');
+
 }
