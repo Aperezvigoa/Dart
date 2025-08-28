@@ -9,7 +9,7 @@ void main() {
   recieveColor('Alex', 'Orange');
 
   printUserCity('Alex', city: 'Madrid');
-  printUserCity('Jon');
+  printUserCity('Jon'); // City has a default value, so it's optional
 }
 
 // Simple function that prints a message
