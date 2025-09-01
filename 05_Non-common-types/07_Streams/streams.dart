@@ -2,7 +2,8 @@ import 'dart:async';
 
 void main() {
 
-  final streamController = StreamController();
+  // Typing the stream and converting to broadcast so we can use the stream multiple times
+  final StreamController<String> streamController = StreamController.broadcast();
 
   // We define how our stream should work
   streamController.stream.listen(
@@ -10,6 +11,14 @@ void main() {
     // Handle the error if something went wrong
     onError: (err) => print(err),
     // If we want to cancel the stream when we recieve an error we use:
+    cancelOnError: true,
+
+    onDone: () => print('Stream closed successfully')
+    );
+
+  streamController.stream.listen(
+    (data) => print('Running $data'),
+    onError: (err) => print(err),
     cancelOnError: true,
 
     onDone: () => print('Stream closed successfully')
