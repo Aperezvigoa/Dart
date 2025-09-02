@@ -3,7 +3,7 @@ import 'bee.dart';
 void main() {
 
   // Using our constructor
-  Bee mrHoney = new Bee('Mr Honey', true);
+  final Bee mrHoney = new Bee('Mr Honey', true);
 
   /*
   Instead of doing this, we can use a builder.
@@ -12,4 +12,9 @@ void main() {
   */
 
   mrHoney.fly();
+
+
+  final Bee beautyBee = new Bee.beatifulBee('Maya');
+  beautyBee.makeHoney();
+
 }

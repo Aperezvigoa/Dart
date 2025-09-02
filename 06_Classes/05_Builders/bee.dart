@@ -39,6 +39,12 @@ class Bee {
     this.isBeautiful = isBeautiful;
   }
 
+  // Multiple Builders
+  Bee.beatifulBee(this.name) {
+    this.isBeautiful = true;
+  }
+
+
   void fly() {
     print('${this.name} is flying');
   }
