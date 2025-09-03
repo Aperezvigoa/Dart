@@ -1,9 +1,14 @@
 import 'order.dart';
+import 'oven.dart';
 
 class Pizzeria {
 
-  late final List<Order> queue;
-  late final int totalOvens;
+  final List<Order> queue = [];
+  final List<Oven> ovens = [
+    new Oven(),
+    new Oven(),
+    new Oven()
+  ];
   
   static final Pizzeria _singleton = new Pizzeria._internal();
 
